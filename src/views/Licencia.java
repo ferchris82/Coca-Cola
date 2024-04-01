@@ -29,7 +29,19 @@ public class Licencia extends JFrame implements ActionListener, ChangeListener {
         textarea1 = new JTextArea();
         textarea1.setEditable(false);
         textarea1.setFont(new Font("Andale Mono",0,9));
-        textarea1.setText("Términos y condiciones");
+        textarea1.setText("""
+
+
+                        TÉRMINOS Y CONDICIONES
+                        A. Uso Aceptable: Al utilizar esta aplicación, aceptas hacer un uso adecuado y responsable de todas las funciones y características
+                            proporcionadas.
+                        B. Responsabilidad del Usuario: Eres responsable de cualquier acción que realices dentro de la aplicación y del contenido que compartas
+                            a través de ella.
+                        C. Privacidad: Respetamos tu privacidad y nos comprometemos a proteger tus datos personales de acuerdo con nuestra política de privacidad.
+                        D. Modificaciones: Nos reservamos el derecho de modificar o actualizar estos términos y condiciones en cualquier momento sin previo aviso.
+                        E. Derechos de Autor: Todo el contenido proporcionado dentro de la aplicación está sujeto a derechos de autor y no puede ser utilizado de 
+                            manera inapropiada o sin permiso.
+                """);
         scrollpane1 = new JScrollPane(textarea1);
         scrollpane1.setBounds(10,40,575,200);
         add(scrollpane1);
@@ -47,7 +59,7 @@ public class Licencia extends JFrame implements ActionListener, ChangeListener {
         
 
         boton2 = new JButton("No Acepto");
-        boton2.setBounds(10,290,100,30);
+        boton2.setBounds(120,290,100,30);
         boton2.addActionListener(this);
         boton2.setEnabled(true);
         add(boton2);
