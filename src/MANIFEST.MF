@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: ChrisferDev
+Main-Class: Bienvenida
+X-COMMENT: AppVacaciones CocaCola Java
